@@ -18,10 +18,3 @@ const ProjectCard = ({ project }) => {
 };
 
 export default ProjectCard;
-/*
-<li key={project.id}>
-  <a href={project.html_url} target='_blank' rel='noopener: noreferrer'>
-    {project.name}
-  </a>
-</li>;
-*/

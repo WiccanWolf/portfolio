@@ -9,22 +9,21 @@ const Projects = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    axios
-      .get('https://api.github.com/users/WiccanWolf/repos')
-      .then((response) => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          'https://api.github.com/users/WiccanWolf/repos'
+        );
         setProjects(response.data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Error retrieving GitHub repos: ', error);
+      } catch (error) {
+        console.error('Error retrieving projects: ', error);
         setError(error);
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+    fetchData();
   }, []);
-
-  if (loading) {
-    <Loading />;
-  }
 
   if (error) {
     return (
@@ -38,6 +37,7 @@ const Projects = () => {
     <>
       <title>Projects</title>
       <h1 style={{ marginTop: '1rem' }}>Projects</h1>
+      {loading ? <Loading /> : ''}
       <ul className='project-grid'>
         {projects.map((project) => (
           <ProjectCard project={project} key={project.id} />

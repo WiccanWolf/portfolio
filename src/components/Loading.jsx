@@ -1,8 +1,21 @@
 import React from 'react';
-import ReactLoading from 'react-loading';
+import { ThreeDots } from 'react-loader-spinner';
 
-const Loading = ({ type, color }) => {
-  <ReactLoading type={type} color={color} height={'20%'} width={'20%'} />;
+const Loading = () => {
+  return (
+    <div className='loading-box'>
+      <p>Page is loading, please wait.</p>
+      <ThreeDots
+        className='loading'
+        visible={true}
+        height='80'
+        width='80'
+        color='black'
+        radius='9'
+        ariaLabel='three-dots-loading'
+      />
+    </div>
+  );
 };
 
 export default Loading;
