@@ -9,17 +9,19 @@ import ThankYou from './components/ThankYou';
 import Loading from './components/Loading';
 import AboutMe from './components/AboutMe';
 
+const baseURL = 'https://wiccanwolfportfolio.netlify.app/';
+
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Navigation className='navbar' />
         <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/aboutme' element={<AboutMe />} />
-          <Route path='/contact' element={<ContactForm />} />
-          <Route path='/thanks' element={<ThankYou />} />
+          <Route path={`${baseURL}`} element={<Homepage />} />
+          <Route path={`${baseURL}/projects`} element={<Projects />} />
+          <Route path={`${baseURL}/aboutme`} element={<AboutMe />} />
+          <Route path={`${baseURL}/contact`} element={<ContactForm />} />
+          <Route path={`${baseURL}/thanks`} element={<ThankYou />} />
           <Route path='test' element={<Loading />} />
         </Routes>
       </BrowserRouter>
