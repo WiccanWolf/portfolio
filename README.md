@@ -1,12 +1,24 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! This website showcases my projects, skills, and expierence as a Software Developer.
 
-Currently, two official plugins are available:
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I am actively seeking new opportunities in the tech industry to both work and learn, and I am continuously expanding my skillset. Currently, I am learning **C#** and **Python** to broaden my expertise.
 
-## Expanding the ESLint configuration
+## Built from Scratch
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This portfolio website has been entirely designed and developed by me. From the frontend to the backend, every component has been crafted to reflect my skills and creativity.
+
+## Technologies Used
+
+- **Frontend:** Vite + React
+- **Backend:** Express.js
+- **Database:** PostgresSQL
+- **Styling:** CSS / HTML
+
+## Get in Touch
+
+If you're interested in working together or have any questions, please feel free to reach out!
+
+[LinkedIn](https://www.linkedin.com/in/toni-l-13aa38137/) | [GitHub](https://github.com/WiccanWolf/) | [Email](mailto:wiccanwolfdev@gmail.com)
