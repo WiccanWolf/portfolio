@@ -4,7 +4,7 @@ Welcome to my portfolio! This website showcases my projects, skills, and expiere
 
 ## About Me
 
-I am actively seeking new opportunities in the tech industry to both work and learn, and I am continuously expanding my skillset. Currently, I am learning **C#** and **Python** to broaden my expertise, which as of writing this is in HTML, CSS, JavaScript and SQL. All of which can be seen throughout my projects and portfolio site.
+I am actively seeking new opportunities in the tech industry to both work and learn, and I am continuously expanding my skillset. Currently, I am learning **C#** and **Python** to broaden my expertise, which as of writing this is in **HTML**, **CSS**, **JavaScript** and **SQL**. All of which can be seen throughout my projects and portfolio site.
 
 ## Built from Scratch
 
