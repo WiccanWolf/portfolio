@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import funFacts from '../facts.json';
-import { Button } from 'react-bootstrap';
+import { Button } from '@mui/material';
 
-const Homepage = () => {
+const Homepage = ({ darkMode }) => {
   const keys = Object.keys(funFacts);
   const getRandomKey = (currentKey) => {
     const availableKyes = keys.filter((key) => key !== currentKey);
@@ -19,12 +19,18 @@ const Homepage = () => {
     <>
       <title>Homepage</title>
       <h1 style={{ marginTop: '1rem' }}>Homepage</h1>
-      <img style={{ filter: 'blur(3px)' }} src='src/assets/testSuite.jpeg' />
-      <div class='centered'>Wiccan Wolf</div>
       <div className='fact-randomiser'>
         <p>{funFacts[fact]}</p>
       </div>
-      <Button variant='outline-dark' onClick={handleRandomise}>
+      <Button
+        variant='contained'
+        sx={{
+          bgcolor: darkMode ? '#191813' : '#FDF6C3',
+          color: darkMode ? '#FDF6C3' : '#000',
+          '&:hover': { bgcolor: darkMode ? '#1565C0' : '#64B5F6' },
+        }}
+        onClick={handleRandomise}
+      >
         New fact!
       </Button>
     </>
