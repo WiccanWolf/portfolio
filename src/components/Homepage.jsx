@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import funFacts from '../facts.json';
 import { Button } from '@mui/material';
 
@@ -18,16 +18,19 @@ const Homepage = ({ darkMode }) => {
   return (
     <>
       <title>Homepage</title>
-      <h1 style={{ marginTop: '1rem' }}>Homepage</h1>
-      <div className='fact-randomiser'>
+      <h1 className='centered-text' style={{ marginTop: '1rem' }}>
+        Homepage
+      </h1>
+      <div className='centered-text'>
         <p>{funFacts[fact]}</p>
       </div>
       <Button
+        className='centered-button'
         variant='contained'
         sx={{
           bgcolor: darkMode ? '#191813' : '#FDF6C3',
-          color: darkMode ? '#FDF6C3' : '#000',
-          '&:hover': { bgcolor: darkMode ? '#1565C0' : '#64B5F6' },
+          color: darkMode ? '#FDF6C3' : '#191813',
+          '&:hover': { bgcolor: darkMode ? '#191813' : '#FDF6C3' },
         }}
         onClick={handleRandomise}
       >

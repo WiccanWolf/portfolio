@@ -7,25 +7,29 @@ const Navigation = ({ darkMode }) => {
       position='static'
       sx={{
         bgcolor: darkMode ? 'black' : '#FDF6C3',
-        color: darkMode ? '#FFF' : '#000',
-        boxShadow: darkMode ? 'none' : '0px 4px 10px rgba(0, 0, 0, 0.1)',
+        color: 'text.primary',
+        boxShadow: darkMode ? 'none' : '0px 4px 10px rgba(0,0,0,0.1)',
         padding: '0.5rem',
       }}
     >
       <Toolbar>
         <Typography variant='h6' xs={{ flexGrow: 1 }}>
-          <Button component={Link} to='/' sx={{ color: 'inheret' }}>
+          <Button component={Link} to='/' sx={{ color: 'text.primary' }}>
             Home
           </Button>
         </Typography>
         <Box>
-          <Button component={Link} to='/projects' sx={{ color: 'inheret' }}>
+          <Button
+            component={Link}
+            to='/projects'
+            sx={{ color: 'text.primary' }}
+          >
             Projects
           </Button>
-          <Button component={Link} to='/aboutme' sx={{ color: 'inheret' }}>
+          <Button component={Link} to='/aboutme' sx={{ color: 'text.primary' }}>
             About Me
           </Button>
-          <Button component={Link} to='/contact' sx={{ color: 'inheret' }}>
+          <Button component={Link} to='/contact' sx={{ color: 'text.primary' }}>
             Contact Me
           </Button>
         </Box>

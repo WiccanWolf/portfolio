@@ -24,23 +24,23 @@ const App = () => {
   const darkTheme = createTheme({
     palette: {
       mode: toggleDarkMode ? 'dark' : 'light',
-      primary: { main: '#FDF6C3' },
-      secondary: { main: '#131052' },
+      primary: { main: '#inheret' },
+      secondary: { main: '#FFF9C4' },
       background: { default: toggleDarkMode ? '#121212' : '#FFF9C4' },
-      paper: toggleDarkMode ? '1E1E1E' : '#FFFFE0',
+      paper: toggleDarkMode ? '121212' : '#FFF9C4',
+      text: { primary: toggleDarkMode ? '#FFF9C4' : '#121212' },
     },
-    text: { primary: toggleDarkMode ? '#ffffff' : '#000000' },
   });
 
   return (
     <>
       <BrowserRouter>
         <ThemeProvider theme={darkTheme}>
-          <CssBaseline />
           <Box
             sx={{
               bgcolor: 'background.default',
               minHeight: '100vh',
+              width: '100vw',
               color: 'text.primary',
             }}
           >
