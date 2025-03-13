@@ -12,10 +12,10 @@ This portfolio website has been entirely designed and developed by me. From the 
 
 ## Technologies Used
 
-- **Frontend:** Vite + React
-- **Backend:** Express.js
-- **Database:** PostgresSQL
-- **Styling:** CSS / HTML
+- **Frontend:** Vite + React | Mui Materials
+- **Backend:** 
+- **Database:** 
+- **Styling:** CSS / HTML | Bootstrap
 
 ## Get in Touch
 
