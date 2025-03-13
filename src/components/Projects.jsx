@@ -36,7 +36,9 @@ const Projects = () => {
   return (
     <>
       <title>Projects</title>
-      <h1 style={{ marginTop: '1rem' }}>Projects</h1>
+      <h1 className='centered-text' style={{ marginTop: '1rem' }}>
+        Projects
+      </h1>
       {loading ? <Loading /> : ''}
       <ul className='project-grid'>
         {projects.map((project) => (

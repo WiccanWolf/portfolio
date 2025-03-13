@@ -2,7 +2,9 @@ const ContactForm = () => {
   return (
     <>
       <title>Contact Me</title>
-      <h1 style={{ marginTop: '1rem' }}>Contact Me</h1>
+      <h1 className='centered-text' style={{ marginTop: '1rem' }}>
+        Contact Me
+      </h1>
       <form
         action='https://public.herotofu.com/v1/4902e6e0-f786-11ef-831c-f7fd4c94a18d'
         method='post'
@@ -46,7 +48,6 @@ const ContactForm = () => {
               textIndent: '-99999px',
               whiteSpace: 'nowrap',
               overflow: 'hidden',
-              position: 'absolute',
             }}
             aria-hidden='true'
           >

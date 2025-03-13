@@ -56,12 +56,14 @@ const AboutMe = () => {
   return (
     <>
       <title>About Me</title>
-      <h1 style={{ marginTop: '1rem' }}>About Me</h1>
-      <h2>
+      <h1 className='centered-text' style={{ marginTop: '1rem' }}>
+        About Me
+      </h1>
+      <h2 className='centered-text'>
         {userInfo.name} ~ {userInfo.login}
       </h2>
       {loading ? <Loading /> : ''}
-      <img id='profile-pic' src={userInfo.avatar_url} />
+      <img id='profile-pic' className='centered' src={userInfo.avatar_url} />
       <div style={{ margin: '1rem' }} className='grid-container'>
         <h3>Personal Statement</h3>
         <div class='grid-item'>{PersonalStatement}</div>
